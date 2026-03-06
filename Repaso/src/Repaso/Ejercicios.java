@@ -81,10 +81,29 @@ public class Ejercicios {
 		
 	}
 	
+					// PROGRAMA 4
+	public static void Programa4() {
+		System.out.println("Ingrese un numero. ");
+		int cantidad = sc.nextInt();
+		
+		int NumerosPares = 0;
+		int suma = 0;
+		double promedio = 0;
+		
+		for(int i = 1; i <= cantidad; i++ ) {
+			if(i % 2 == 0) {
+				suma += i;
+				NumerosPares++;
+			}
+		}
+		promedio  = suma / NumerosPares;
+		System.out.println("El promedio de los numeros pares de "+cantidad+" Es: "+promedio);
+		
+	}
 	
 	
 	public static void main(String[] args) {
-		Programa3();
+		Programa4();
 	}
 
 }
