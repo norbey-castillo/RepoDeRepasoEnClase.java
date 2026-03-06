@@ -53,9 +53,38 @@ public class Ejercicios {
 		System.out.println("El factorial de: "+numero+" Es: "+Factorial);
 	}
 	
+					// PROGRAMA 3
+	public static void Programa3() {
+		
+		System.out.println("Cuantos numeros desea ingresar? ");
+		int cantidad = sc.nextInt();
+		
+		int EsPositivo = 0;
+		int EsNegativo = 0;
+		int EsCero = 0;
+		
+		for(int i = 1; i <= cantidad; i++) {
+			System.out.print("-> ");
+			int numero = sc.nextInt();
+		if(numero > 0) {
+			EsPositivo ++;
+		}else if(numero < 0) {
+			EsNegativo ++;
+		}else {
+			EsCero  ++;
+		}
+		}
+		
+		System.out.println("Cantidad positivos son: "+EsPositivo);
+		System.out.println("Cantidad negativos son: "+EsNegativo);
+		System.out.println("Cantidad cero son: "+EsCero);
+		
+	}
+	
+	
 	
 	public static void main(String[] args) {
-
+		Programa3();
 	}
 
 }
