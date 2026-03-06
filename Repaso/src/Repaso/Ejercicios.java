@@ -101,9 +101,24 @@ public class Ejercicios {
 		
 	}
 	
+					// PROGRAMA 5
+	public static void Programa5() {
+		System.out.print("Ingrese un Numero: ");
+		long numero = sc.nextLong();
+		
+		long suma = 0;
+		long digito = 0;
+		
+		while(numero > 0) {
+			digito = numero % 10;
+			suma = suma + digito;
+			numero = numero/10;
+		}
+		System.out.print("La suma de los digitos del numero ingresado es: "+suma);
+	}
 	
 	public static void main(String[] args) {
-		Programa4();
+		Programa5();
 	}
 
 }
