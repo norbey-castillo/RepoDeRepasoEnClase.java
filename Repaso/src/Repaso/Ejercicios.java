@@ -117,8 +117,25 @@ public class Ejercicios {
 		System.out.print("La suma de los digitos del numero ingresado es: "+suma);
 	}
 	
+					// PROGRAMA 6
+	public static void Programa6() {
+		System.out.print("Ingrese un numero: ");
+		int numero = sc.nextInt();
+		if (numero % 7 == 0) {
+			System.out.println("El numero: "+numero+" es multiplo de 7.");
+		}else if(numero % 11 == 0) {
+			System.out.println("El numero: "+numero+" es multiplo de 11.");
+		}else if(numero % 7 == 0 && numero % 11 == 0){
+			System.out.println("El numero: "+numero+" es multipli de 7 y 11");
+		}else{
+			System.out.println("EL numero: "+numero+" no es multiplo de 7 ni de 11.");
+		}
+	}
+	
+	
+	
 	public static void main(String[] args) {
-		Programa5();
+		Programa6();
 	}
 
 }
